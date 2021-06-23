@@ -51,7 +51,7 @@
        
       <div class="su-site-search su-user-menu">
         <ul class="nav justify-content-end">
-          <li class="nav-item"><span class="nav-link">Welcome, Beicheng</span></li>
+          <li class="nav-item"><span class="nav-link">Welcome, FIRSTNAME</span></li>
           <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="https://healthcheck.stanford.edu/en/badge" role="button" aria-haspopup="true" aria-expanded="false">English</a>
             <div class="dropdown-menu">
@@ -67,7 +67,7 @@
         <button class="su-main-nav__toggle su-main-nav__toggle--right" aria-expanded="false">Menu</button>
         <ul class="su-main-nav__menu-lv1">
           <li class="su-user-menu">
-              <p>Welcome, Beicheng</p>
+              <p>Welcome, FIRSTNAME</p>
               <ul>
                 <li><a href="https://healthcheck.stanford.edu/en/badge">English</a></li>
                 <li><a href="https://healthcheck.stanford.edu/es/badge">Español</a></li>
@@ -118,10 +118,14 @@
                     
                                         <!-- Cleared State -->
                     <div class="access-badge-green">
-                        <h2>Beicheng Lou</h2>
+                        <h2>Hancheng Cao</h2>
                         <div class="h3">CLEARED</div>
                         <div class="h4">for onsite access today</div>
                         <div class="h3">Jun 23, 2021</div>
+                        <script>
+                          let d = (new Date()).toDateString().split(" ");
+                          document.getElementsByClassName("h3")[1].innerHTML = d[1]+" "+d[2]+", "+d[3];
+                        </script>
                     </div>
                     
                     
